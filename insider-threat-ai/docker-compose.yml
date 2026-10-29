@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  cybersentry-soc:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: cybersentry_ai_soc
+    ports:
+      - "8000:8000"
+    environment:
+      - PYTHONUNBUFFERED=1
+    restart: unless-stopped

@@ -1,0 +1,341 @@
+user_id,date,department,role,name,logon_count,after_hours_logons,weekend_activity,usb_connections,after_hours_usb,http_requests,cloud_storage_uploads,bytes_uploaded_mb,external_emails,email_attachment_mb,files_read,files_copied,files_deleted,sensitive_files_accessed,peer_deviation_score,is_insider_threat,threat_type
+EMP001,2026-10-01,Engineering,QA Lead,Jordan Smith,1,0,0,0,0,36,0,0.27,0,0.0,3,0,0,0,0.0,0,NORMAL
+EMP001,2026-10-02,Engineering,QA Lead,Jordan Smith,1,0,0,0,0,56,0,0.37,0,0.0,7,0,0,0,0.0,0,NORMAL
+EMP001,2026-10-05,Engineering,QA Lead,Jordan Smith,1,0,0,0,0,29,0,0.22,0,0.0,12,0,0,0,0.0,0,NORMAL
+EMP001,2026-10-06,Engineering,QA Lead,Jordan Smith,1,0,0,1,0,43,0,0.32,0,0.0,6,0,0,0,5.66,0,NORMAL
+EMP001,2026-10-07,Engineering,QA Lead,Jordan Smith,1,0,0,0,0,32,0,0.25,0,0.0,8,0,0,0,0.0,0,NORMAL
+EMP001,2026-10-08,Engineering,QA Lead,Jordan Smith,1,0,0,0,0,28,0,0.22,0,0.0,13,0,0,0,0.0,0,NORMAL
+EMP001,2026-10-09,Engineering,QA Lead,Jordan Smith,1,0,0,0,0,26,0,0.18,0,0.0,11,0,0,0,0.0,0,NORMAL
+EMP001,2026-10-12,Engineering,QA Lead,Jordan Smith,1,0,0,0,0,35,0,0.25,0,0.0,9,0,0,0,0.0,0,NORMAL
+EMP001,2026-10-13,Engineering,QA Lead,Jordan Smith,1,0,0,0,0,54,0,0.4,0,0.0,14,0,0,0,0.0,0,NORMAL
+EMP002,2026-10-01,IT_Admin,Database Administrator,Sam Chen,1,0,0,0,0,49,0,0.32,0,0.0,13,0,0,0,0.0,0,NORMAL
+EMP002,2026-10-02,IT_Admin,Database Administrator,Sam Chen,1,0,0,0,0,39,0,0.29,0,0.0,11,0,0,4,0.0,0,NORMAL
+EMP002,2026-10-05,IT_Admin,Database Administrator,Sam Chen,1,0,0,0,0,26,0,0.19,0,0.0,13,0,0,2,0.0,0,NORMAL
+EMP002,2026-10-06,IT_Admin,Database Administrator,Sam Chen,1,0,0,0,0,35,0,0.22,0,0.0,12,0,0,2,0.0,0,NORMAL
+EMP002,2026-10-07,IT_Admin,Database Administrator,Sam Chen,1,0,0,0,0,57,0,0.38,0,0.0,10,0,0,1,0.0,0,NORMAL
+EMP002,2026-10-08,IT_Admin,Database Administrator,Sam Chen,1,0,0,0,0,58,0,0.45,0,0.0,13,0,0,2,0.0,0,NORMAL
+EMP002,2026-10-09,IT_Admin,Database Administrator,Sam Chen,1,0,0,0,0,30,0,0.24,0,0.0,14,0,0,3,0.0,0,NORMAL
+EMP002,2026-10-12,IT_Admin,Database Administrator,Sam Chen,1,0,0,0,0,58,0,0.43,0,0.0,10,0,0,0,0.0,0,NORMAL
+EMP002,2026-10-13,IT_Admin,Database Administrator,Sam Chen,1,0,0,0,0,60,0,0.44,0,0.0,9,0,0,2,0.0,0,NORMAL
+EMP002,2026-10-14,IT_Admin,Database Administrator,Sam Chen,1,0,0,0,0,45,0,0.33,0,0.0,13,0,0,1,0.0,0,NORMAL
+EMP003,2026-10-01,Finance,Financial Analyst,Taylor Vance,1,0,0,0,0,35,0,0.25,0,0.0,4,0,0,1,0.0,0,NORMAL
+EMP003,2026-10-02,Finance,Financial Analyst,Taylor Vance,1,0,0,0,0,25,0,0.19,0,0.0,9,0,0,0,0.0,0,NORMAL
+EMP003,2026-10-05,Finance,Financial Analyst,Taylor Vance,1,0,0,0,0,52,0,0.35,0,0.0,6,0,0,1,0.0,0,NORMAL
+EMP003,2026-10-07,Finance,Financial Analyst,Taylor Vance,1,0,0,0,0,40,0,0.32,0,0.0,9,0,0,2,0.0,0,NORMAL
+EMP003,2026-10-08,Finance,Financial Analyst,Taylor Vance,1,0,0,0,0,24,0,0.16,0,0.0,10,0,0,3,0.0,0,NORMAL
+EMP003,2026-10-09,Finance,Financial Analyst,Taylor Vance,1,0,0,0,0,38,0,0.21,0,0.0,4,0,0,0,0.0,0,NORMAL
+EMP003,2026-10-12,Finance,Financial Analyst,Taylor Vance,1,0,0,0,0,25,0,0.22,0,0.0,15,0,0,2,0.0,0,NORMAL
+EMP003,2026-10-13,Finance,Financial Analyst,Taylor Vance,1,0,0,0,0,39,0,0.3,0,0.0,6,0,0,1,0.0,0,NORMAL
+EMP003,2026-10-14,Finance,Financial Analyst,Taylor Vance,1,0,0,1,0,41,0,0.32,0,0.0,3,0,0,1,0.0,0,NORMAL
+EMP004,2026-10-02,HR,Talent Specialist,Casey Vance,1,0,0,0,0,40,0,0.28,0,0.0,15,0,0,0,0.0,0,NORMAL
+EMP004,2026-10-05,HR,Talent Specialist,Casey Vance,1,0,0,0,0,40,0,0.32,0,0.0,5,0,0,0,0.0,0,NORMAL
+EMP004,2026-10-06,HR,Talent Specialist,Casey Vance,1,0,0,0,0,43,0,0.31,0,0.0,8,0,0,0,0.0,0,NORMAL
+EMP004,2026-10-07,HR,Talent Specialist,Casey Vance,1,0,0,0,0,24,0,0.17,0,0.0,10,0,0,0,0.0,0,NORMAL
+EMP004,2026-10-08,HR,Talent Specialist,Casey Vance,1,0,0,0,0,25,0,0.2,0,0.0,11,0,0,0,0.0,0,NORMAL
+EMP004,2026-10-09,HR,Talent Specialist,Casey Vance,1,0,0,0,0,33,0,0.23,0,0.0,5,0,0,0,0.0,0,NORMAL
+EMP004,2026-10-12,HR,Talent Specialist,Casey Vance,1,0,0,0,0,46,0,0.36,0,0.0,12,0,0,0,0.0,0,NORMAL
+EMP004,2026-10-13,HR,Talent Specialist,Casey Vance,1,0,0,0,0,44,0,0.32,0,0.0,5,0,0,0,0.0,0,NORMAL
+EMP004,2026-10-14,HR,Talent Specialist,Casey Vance,1,0,0,0,0,37,0,0.22,0,0.0,16,0,0,0,0.0,0,NORMAL
+EMP005,2026-10-01,Sales,BizDev Lead,Pat Smith,1,0,0,0,0,35,0,0.27,0,0.0,7,0,0,0,0.0,0,NORMAL
+EMP005,2026-10-02,Sales,BizDev Lead,Pat Smith,1,0,0,0,0,44,0,0.29,0,0.0,9,0,0,0,0.0,0,NORMAL
+EMP005,2026-10-05,Sales,BizDev Lead,Pat Smith,1,0,0,0,0,40,0,0.3,0,0.0,10,0,0,0,0.0,0,NORMAL
+EMP005,2026-10-06,Sales,BizDev Lead,Pat Smith,1,0,0,0,0,28,0,0.18,0,0.0,9,0,0,0,0.0,0,NORMAL
+EMP005,2026-10-09,Sales,BizDev Lead,Pat Smith,1,0,0,0,0,41,0,0.29,0,0.0,13,0,0,0,0.0,0,NORMAL
+EMP005,2026-10-12,Sales,BizDev Lead,Pat Smith,1,0,0,0,0,34,0,0.26,0,0.0,11,0,0,0,0.0,0,NORMAL
+EMP005,2026-10-14,Sales,BizDev Lead,Pat Smith,1,0,0,1,0,47,0,0.3,0,0.0,15,0,0,0,3.16,0,NORMAL
+EMP006,2026-10-01,Engineering,Software Engineer,Jordan Chen,1,0,0,0,0,26,0,0.17,0,0.0,9,0,0,0,0.0,0,NORMAL
+EMP006,2026-10-02,Engineering,Software Engineer,Jordan Chen,1,0,0,0,0,37,0,0.29,0,0.0,5,0,0,0,0.0,0,NORMAL
+EMP006,2026-10-03,Engineering,Software Engineer,Jordan Chen,1,0,1,0,0,27,0,0.22,0,0.0,7,0,0,0,0.0,0,NORMAL
+EMP006,2026-10-05,Engineering,Software Engineer,Jordan Chen,1,0,0,0,0,36,0,0.27,0,0.0,14,0,0,0,0.0,0,NORMAL
+EMP006,2026-10-06,Engineering,Software Engineer,Jordan Chen,1,0,0,1,0,35,0,0.28,0,0.0,13,0,0,0,5.65,0,NORMAL
+EMP006,2026-10-07,Engineering,Software Engineer,Jordan Chen,1,0,0,0,0,20,0,0.14,0,0.0,5,0,0,0,0.0,0,NORMAL
+EMP006,2026-10-08,Engineering,Software Engineer,Jordan Chen,1,0,0,0,0,29,0,0.21,0,0.0,10,0,0,0,0.0,0,NORMAL
+EMP006,2026-10-09,Engineering,Software Engineer,Jordan Chen,1,0,0,0,0,60,0,0.48,0,0.0,5,0,0,0,0.0,0,NORMAL
+EMP006,2026-10-12,Engineering,Software Engineer,Jordan Chen,1,0,0,0,0,43,0,0.31,0,0.0,12,0,0,0,0.0,0,NORMAL
+EMP006,2026-10-13,Engineering,Software Engineer,Jordan Chen,1,0,0,0,0,33,0,0.27,0,0.0,14,0,0,0,0.0,0,NORMAL
+EMP006,2026-10-14,Engineering,Software Engineer,Jordan Chen,1,0,0,0,0,48,0,0.27,0,0.0,4,0,0,0,0.0,0,NORMAL
+EMP007,2026-10-02,IT_Admin,Sysadmin,Casey Davis,1,0,0,0,0,40,0,0.29,0,0.0,7,0,0,1,0.0,0,NORMAL
+EMP007,2026-10-05,IT_Admin,Sysadmin,Casey Davis,1,0,0,0,0,22,0,0.16,0,0.0,8,0,0,0,0.0,0,NORMAL
+EMP007,2026-10-06,IT_Admin,Sysadmin,Casey Davis,1,0,0,0,0,26,0,0.17,0,0.0,9,0,0,2,0.0,0,NORMAL
+EMP007,2026-10-07,IT_Admin,Sysadmin,Casey Davis,1,0,0,0,0,56,0,0.41,0,0.0,7,0,0,1,0.0,0,NORMAL
+EMP007,2026-10-08,IT_Admin,Sysadmin,Casey Davis,1,0,0,0,0,51,0,0.36,0,0.0,9,0,0,1,0.0,0,NORMAL
+EMP007,2026-10-09,IT_Admin,Sysadmin,Casey Davis,1,0,0,0,0,24,0,0.17,0,0.0,6,0,0,0,0.0,1,PRIVILEGE_SABOTAGE
+EMP007,2026-10-10,IT_Admin,Sysadmin,Casey Davis,1,1,1,1,1,32,0,0.23,0,0.0,0,0,58,58,4.5,1,PRIVILEGE_SABOTAGE
+EMP007,2026-10-11,IT_Admin,Sysadmin,Casey Davis,1,1,1,0,0,46,0,0.34,0,0.0,0,0,31,31,2.24,1,PRIVILEGE_SABOTAGE
+EMP007,2026-10-12,IT_Admin,Sysadmin,Casey Davis,1,1,0,0,0,24,0,0.22,0,0.0,0,0,41,41,3.05,1,PRIVILEGE_SABOTAGE
+EMP007,2026-10-13,IT_Admin,Sysadmin,Casey Davis,1,1,0,0,0,45,0,0.33,0,0.0,0,0,46,46,3.46,1,PRIVILEGE_SABOTAGE
+EMP007,2026-10-14,IT_Admin,Sysadmin,Casey Davis,1,1,0,0,0,32,0,0.24,0,0.0,0,0,59,59,4.52,1,PRIVILEGE_SABOTAGE
+EMP008,2026-10-01,Finance,Financial Analyst,Casey Chen,1,0,0,1,0,34,0,0.27,0,0.0,7,0,0,1,0.0,0,NORMAL
+EMP008,2026-10-02,Finance,Financial Analyst,Casey Chen,1,0,0,0,0,25,0,0.16,0,0.0,12,0,0,2,0.0,0,NORMAL
+EMP008,2026-10-05,Finance,Financial Analyst,Casey Chen,1,0,0,0,0,50,0,0.37,0,0.0,7,0,0,1,0.0,0,NORMAL
+EMP008,2026-10-06,Finance,Financial Analyst,Casey Chen,1,0,0,0,0,32,0,0.23,0,0.0,13,0,0,1,0.0,0,NORMAL
+EMP008,2026-10-07,Finance,Financial Analyst,Casey Chen,1,0,0,0,0,28,0,0.2,0,0.0,14,0,0,0,0.0,0,NORMAL
+EMP008,2026-10-08,Finance,Financial Analyst,Casey Chen,1,0,0,0,0,41,0,0.3,0,0.0,17,0,0,4,0.0,0,NORMAL
+EMP008,2026-10-09,Finance,Financial Analyst,Casey Chen,1,0,0,0,0,28,0,0.18,0,0.0,5,0,0,0,0.0,0,NORMAL
+EMP008,2026-10-12,Finance,Financial Analyst,Casey Chen,1,0,0,0,0,23,0,0.14,0,0.0,9,0,0,1,0.0,0,NORMAL
+EMP008,2026-10-13,Finance,Financial Analyst,Casey Chen,1,0,0,0,0,39,0,0.25,0,0.0,6,0,0,0,0.0,0,NORMAL
+EMP008,2026-10-14,Finance,Financial Analyst,Casey Chen,1,0,0,1,0,29,0,0.21,0,0.0,7,0,0,0,0.0,0,NORMAL
+EMP009,2026-10-01,HR,Talent Specialist,Casey Kim,1,0,0,0,0,56,0,0.46,0,0.0,6,0,0,0,0.0,0,NORMAL
+EMP009,2026-10-02,HR,Talent Specialist,Casey Kim,1,0,0,0,0,53,0,0.42,0,0.0,11,0,0,0,0.0,0,NORMAL
+EMP009,2026-10-05,HR,Talent Specialist,Casey Kim,1,0,0,0,0,26,0,0.21,0,0.0,16,0,0,0,0.0,0,NORMAL
+EMP009,2026-10-06,HR,Talent Specialist,Casey Kim,1,0,0,0,0,21,0,0.15,0,0.0,11,0,0,0,0.0,0,NORMAL
+EMP009,2026-10-07,HR,Talent Specialist,Casey Kim,1,0,0,0,0,24,0,0.15,0,0.0,6,0,0,0,0.0,0,NORMAL
+EMP009,2026-10-08,HR,Talent Specialist,Casey Kim,1,0,0,0,0,42,0,0.32,0,0.0,15,0,0,0,0.0,0,NORMAL
+EMP009,2026-10-09,HR,Talent Specialist,Casey Kim,1,0,0,0,0,52,0,0.42,0,0.0,4,0,0,0,0.0,0,NORMAL
+EMP009,2026-10-12,HR,Talent Specialist,Casey Kim,1,0,0,0,0,53,0,0.4,0,0.0,12,0,0,0,0.0,0,NORMAL
+EMP009,2026-10-13,HR,Talent Specialist,Casey Kim,1,0,0,0,0,30,0,0.21,0,0.0,4,0,0,0,0.0,0,NORMAL
+EMP009,2026-10-14,HR,Talent Specialist,Casey Kim,1,0,0,0,0,26,0,0.21,0,0.0,5,0,0,0,0.0,0,NORMAL
+EMP010,2026-10-01,Sales,Account Executive,Robin Davis,1,0,0,0,0,59,0,0.45,0,0.0,13,0,0,0,0.0,0,NORMAL
+EMP010,2026-10-02,Sales,Account Executive,Robin Davis,1,0,0,0,0,28,0,0.18,0,0.0,13,0,0,0,0.0,0,NORMAL
+EMP010,2026-10-05,Sales,Account Executive,Robin Davis,1,0,0,0,0,60,0,0.37,0,0.0,11,0,0,0,0.0,0,NORMAL
+EMP010,2026-10-06,Sales,Account Executive,Robin Davis,1,0,0,0,0,42,0,0.29,0,0.0,5,0,0,0,0.0,0,NORMAL
+EMP010,2026-10-07,Sales,Account Executive,Robin Davis,1,0,0,1,0,55,0,0.37,0,0.0,15,0,0,0,3.17,0,NORMAL
+EMP010,2026-10-09,Sales,Account Executive,Robin Davis,1,0,0,0,0,40,0,0.32,0,0.0,4,0,0,0,0.0,0,NORMAL
+EMP010,2026-10-12,Sales,Account Executive,Robin Davis,1,0,0,0,0,35,0,0.25,0,0.0,7,0,0,0,0.0,0,NORMAL
+EMP010,2026-10-13,Sales,Account Executive,Robin Davis,1,0,0,1,0,41,0,0.31,0,0.0,9,0,0,0,3.16,0,NORMAL
+EMP010,2026-10-14,Sales,Account Executive,Robin Davis,1,0,0,0,0,32,0,0.23,0,0.0,7,0,0,0,0.0,0,NORMAL
+EMP011,2026-10-01,Engineering,DevOps Engineer,Alex Miller,1,0,0,0,0,56,0,0.39,0,0.0,13,0,0,0,0.0,0,NORMAL
+EMP011,2026-10-02,Engineering,DevOps Engineer,Alex Miller,1,0,0,0,0,27,0,0.19,0,0.0,16,0,0,0,0.0,0,NORMAL
+EMP011,2026-10-06,Engineering,DevOps Engineer,Alex Miller,1,0,0,0,0,58,0,0.47,0,0.0,11,0,0,0,0.0,0,NORMAL
+EMP011,2026-10-07,Engineering,DevOps Engineer,Alex Miller,1,0,0,0,0,31,0,0.18,0,0.0,14,0,0,0,0.0,0,NORMAL
+EMP011,2026-10-08,Engineering,DevOps Engineer,Alex Miller,1,0,0,0,0,50,0,0.38,0,0.0,5,0,0,0,0.0,0,NORMAL
+EMP011,2026-10-09,Engineering,DevOps Engineer,Alex Miller,1,0,0,0,0,22,0,0.18,0,0.0,6,0,0,0,0.0,0,NORMAL
+EMP011,2026-10-13,Engineering,DevOps Engineer,Alex Miller,1,0,0,0,0,51,0,0.36,0,0.0,5,0,0,0,0.0,0,NORMAL
+EMP011,2026-10-14,Engineering,DevOps Engineer,Alex Miller,1,0,0,0,0,23,0,0.21,0,0.0,6,0,0,0,0.0,0,NORMAL
+EMP012,2026-10-01,IT_Admin,Database Administrator,Pat Garcia,1,0,0,0,0,55,0,0.4,0,0.0,12,0,0,0,0.0,0,NORMAL
+EMP012,2026-10-02,IT_Admin,Database Administrator,Pat Garcia,1,0,0,0,0,57,0,0.41,0,0.0,13,0,0,1,0.0,0,NORMAL
+EMP012,2026-10-03,IT_Admin,Database Administrator,Pat Garcia,1,0,1,1,0,25,0,0.17,0,0.0,11,0,0,3,0.0,0,NORMAL
+EMP012,2026-10-04,IT_Admin,Database Administrator,Pat Garcia,1,0,1,0,0,39,0,0.28,0,0.0,17,0,0,2,0.0,0,NORMAL
+EMP012,2026-10-05,IT_Admin,Database Administrator,Pat Garcia,1,0,0,0,0,45,0,0.37,0,0.0,5,0,0,0,0.0,0,NORMAL
+EMP012,2026-10-06,IT_Admin,Database Administrator,Pat Garcia,1,0,0,0,0,29,0,0.24,0,0.0,5,0,0,0,0.0,0,NORMAL
+EMP012,2026-10-07,IT_Admin,Database Administrator,Pat Garcia,1,0,0,0,0,32,0,0.23,0,0.0,9,0,0,1,0.0,0,NORMAL
+EMP012,2026-10-08,IT_Admin,Database Administrator,Pat Garcia,1,0,0,0,0,43,0,0.31,0,0.0,7,0,0,1,0.0,0,NORMAL
+EMP012,2026-10-09,IT_Admin,Database Administrator,Pat Garcia,1,0,0,0,0,21,0,0.18,0,0.0,7,0,0,0,0.0,0,NORMAL
+EMP012,2026-10-12,IT_Admin,Database Administrator,Pat Garcia,1,0,0,0,0,34,0,0.24,0,0.0,6,0,0,1,0.0,0,NORMAL
+EMP012,2026-10-13,IT_Admin,Database Administrator,Pat Garcia,1,0,0,0,0,44,0,0.31,0,0.0,4,0,0,0,0.0,0,NORMAL
+EMP012,2026-10-14,IT_Admin,Database Administrator,Pat Garcia,1,0,0,0,0,37,0,0.28,0,0.0,10,0,0,3,0.0,0,NORMAL
+EMP013,2026-10-01,Finance,Accountant,Taylor Chen,1,0,0,0,0,57,0,0.42,0,0.0,7,0,0,0,0.0,0,NORMAL
+EMP013,2026-10-02,Finance,Accountant,Taylor Chen,1,0,0,0,0,40,0,0.28,0,0.0,10,0,0,2,0.0,0,NORMAL
+EMP013,2026-10-05,Finance,Accountant,Taylor Chen,1,0,0,0,0,28,0,0.18,0,0.0,12,0,0,1,0.0,0,NORMAL
+EMP013,2026-10-06,Finance,Accountant,Taylor Chen,1,0,0,0,0,43,0,0.31,0,0.0,15,0,0,3,0.0,0,NORMAL
+EMP013,2026-10-07,Finance,Accountant,Taylor Chen,1,0,0,0,0,32,0,0.21,0,0.0,10,0,0,0,0.0,0,NORMAL
+EMP013,2026-10-08,Finance,Accountant,Taylor Chen,1,0,0,0,0,60,0,0.42,0,0.0,9,0,0,1,0.0,0,NORMAL
+EMP013,2026-10-12,Finance,Accountant,Taylor Chen,1,0,0,1,0,55,0,0.36,0,0.0,9,0,0,1,0.0,0,NORMAL
+EMP013,2026-10-13,Finance,Accountant,Taylor Chen,1,0,0,0,0,36,0,0.23,0,0.0,13,0,0,1,0.0,0,NORMAL
+EMP013,2026-10-14,Finance,Accountant,Taylor Chen,1,0,0,0,0,45,0,0.33,0,0.0,13,0,0,3,0.0,0,NORMAL
+EMP014,2026-10-01,HR,Recruiter,Jordan Vance,1,0,0,0,0,51,0,0.36,0,0.0,7,0,0,0,0.0,0,NORMAL
+EMP014,2026-10-02,HR,Recruiter,Jordan Vance,1,0,0,0,0,43,0,0.32,0,0.0,12,0,0,0,0.0,0,NORMAL
+EMP014,2026-10-05,HR,Recruiter,Jordan Vance,1,0,0,0,0,49,0,0.33,0,0.0,9,0,0,0,0.0,0,NORMAL
+EMP014,2026-10-06,HR,Recruiter,Jordan Vance,1,0,0,0,0,25,0,0.15,0,0.0,9,0,0,0,0.0,0,NORMAL
+EMP014,2026-10-07,HR,Recruiter,Jordan Vance,1,0,0,0,0,28,0,0.23,0,0.0,8,0,0,0,0.0,0,NORMAL
+EMP014,2026-10-08,HR,Recruiter,Jordan Vance,1,0,0,0,0,36,0,0.29,0,0.0,12,0,0,0,0.0,0,NORMAL
+EMP014,2026-10-10,HR,Recruiter,Jordan Vance,1,1,1,0,0,2,1,16.95,0,0.0,0,0,0,0,0.0,1,DATA_EXFILTRATION
+EMP014,2026-10-11,HR,Recruiter,Jordan Vance,1,1,1,1,1,72,31,1487.98,0,0.0,0,39,0,39,3.15,1,DATA_EXFILTRATION
+EMP014,2026-10-12,HR,Recruiter,Jordan Vance,1,1,0,1,1,72,40,1875.83,0,0.0,0,37,0,37,3.48,1,DATA_EXFILTRATION
+EMP014,2026-10-13,HR,Recruiter,Jordan Vance,1,1,0,1,1,97,39,2033.4,0,0.0,0,33,0,33,3.48,1,DATA_EXFILTRATION
+EMP014,2026-10-14,HR,Recruiter,Jordan Vance,1,1,0,2,2,115,55,2802.51,0,0.0,0,34,0,34,4.42,1,DATA_EXFILTRATION
+EMP014,2026-10-15,HR,Recruiter,Jordan Vance,0,0,0,0,0,91,41,1891.89,0,0.0,0,29,0,29,3.06,1,DATA_EXFILTRATION
+EMP015,2026-10-01,Sales,Sales Representative,Jordan Garcia,1,0,0,0,0,54,0,0.4,0,0.0,13,0,0,0,0.0,0,NORMAL
+EMP015,2026-10-02,Sales,Sales Representative,Jordan Garcia,1,0,0,0,0,47,0,0.35,0,0.0,6,0,0,0,0.0,0,NORMAL
+EMP015,2026-10-05,Sales,Sales Representative,Jordan Garcia,1,0,0,0,0,40,0,0.27,0,0.0,10,0,0,0,0.0,0,NORMAL
+EMP015,2026-10-06,Sales,Sales Representative,Jordan Garcia,1,0,0,0,0,44,0,0.34,0,0.0,9,0,0,0,0.0,0,NORMAL
+EMP015,2026-10-07,Sales,Sales Representative,Jordan Garcia,1,0,0,0,0,28,0,0.2,0,0.0,5,0,0,0,0.0,0,NORMAL
+EMP015,2026-10-08,Sales,Sales Representative,Jordan Garcia,1,0,0,0,0,23,0,0.23,0,0.0,5,0,0,0,0.0,0,NORMAL
+EMP015,2026-10-09,Sales,Sales Representative,Jordan Garcia,1,0,0,0,0,37,0,0.27,0,0.0,15,0,0,0,0.0,0,NORMAL
+EMP015,2026-10-12,Sales,Sales Representative,Jordan Garcia,1,0,0,0,0,38,0,0.31,0,0.0,13,0,0,0,0.0,0,NORMAL
+EMP015,2026-10-13,Sales,Sales Representative,Jordan Garcia,1,0,0,0,0,33,0,0.22,0,0.0,6,0,0,0,0.0,0,NORMAL
+EMP015,2026-10-14,Sales,Sales Representative,Jordan Garcia,1,0,0,0,0,36,0,0.27,0,0.0,14,0,0,0,0.0,0,NORMAL
+EMP016,2026-10-01,Engineering,DevOps Engineer,Riley Patel,1,0,0,0,0,21,0,0.19,0,0.0,8,0,0,0,0.0,0,NORMAL
+EMP016,2026-10-02,Engineering,DevOps Engineer,Riley Patel,1,0,0,0,0,47,0,0.36,0,0.0,8,0,0,0,0.0,0,NORMAL
+EMP016,2026-10-05,Engineering,DevOps Engineer,Riley Patel,1,0,0,0,0,20,0,0.15,0,0.0,7,0,0,0,0.0,0,NORMAL
+EMP016,2026-10-06,Engineering,DevOps Engineer,Riley Patel,1,0,0,0,0,27,0,0.18,0,0.0,11,0,0,0,0.0,0,NORMAL
+EMP016,2026-10-07,Engineering,DevOps Engineer,Riley Patel,1,0,0,0,0,37,0,0.28,0,0.0,13,0,0,0,0.0,0,NORMAL
+EMP016,2026-10-08,Engineering,DevOps Engineer,Riley Patel,1,0,0,0,0,56,0,0.38,0,0.0,10,0,0,0,0.0,0,NORMAL
+EMP016,2026-10-09,Engineering,DevOps Engineer,Riley Patel,1,0,0,0,0,35,0,0.26,0,0.0,13,0,0,0,0.0,0,NORMAL
+EMP016,2026-10-12,Engineering,DevOps Engineer,Riley Patel,1,0,0,0,0,42,0,0.3,0,0.0,9,0,0,0,0.0,0,NORMAL
+EMP016,2026-10-13,Engineering,DevOps Engineer,Riley Patel,1,0,0,0,0,43,0,0.35,0,0.0,11,0,0,0,0.0,0,NORMAL
+EMP017,2026-10-01,IT_Admin,Sysadmin,Robin Brown,1,0,0,0,0,25,0,0.16,0,0.0,10,0,0,1,0.0,0,NORMAL
+EMP017,2026-10-02,IT_Admin,Sysadmin,Robin Brown,1,0,0,1,0,55,0,0.43,0,0.0,15,0,0,1,0.0,0,NORMAL
+EMP017,2026-10-05,IT_Admin,Sysadmin,Robin Brown,1,0,0,0,0,35,0,0.26,0,0.0,12,0,0,2,0.0,0,NORMAL
+EMP017,2026-10-06,IT_Admin,Sysadmin,Robin Brown,1,0,0,0,0,36,0,0.32,0,0.0,10,0,0,2,0.0,0,NORMAL
+EMP017,2026-10-07,IT_Admin,Sysadmin,Robin Brown,1,0,0,0,0,53,0,0.45,0,0.0,8,0,0,0,0.0,0,NORMAL
+EMP017,2026-10-08,IT_Admin,Sysadmin,Robin Brown,1,0,0,0,0,39,0,0.24,0,0.0,13,0,0,3,0.0,0,NORMAL
+EMP017,2026-10-09,IT_Admin,Sysadmin,Robin Brown,1,0,0,0,0,39,0,0.26,0,0.0,4,0,0,0,0.0,0,NORMAL
+EMP017,2026-10-12,IT_Admin,Sysadmin,Robin Brown,1,0,0,0,0,53,0,0.4,0,0.0,9,0,0,0,0.0,0,NORMAL
+EMP017,2026-10-13,IT_Admin,Sysadmin,Robin Brown,1,0,0,0,0,47,0,0.36,0,0.0,4,0,0,0,0.0,0,NORMAL
+EMP017,2026-10-14,IT_Admin,Sysadmin,Robin Brown,1,0,0,0,0,34,0,0.24,0,0.0,5,0,0,0,0.0,0,NORMAL
+EMP018,2026-10-02,Finance,Financial Analyst,Pat Vance,1,0,0,0,0,40,0,0.29,0,0.0,13,0,0,0,0.0,0,NORMAL
+EMP018,2026-10-05,Finance,Financial Analyst,Pat Vance,1,0,0,0,0,37,0,0.28,0,0.0,10,0,0,0,0.0,0,NORMAL
+EMP018,2026-10-06,Finance,Financial Analyst,Pat Vance,1,0,0,0,0,36,0,0.24,0,0.0,8,0,0,1,0.0,0,NORMAL
+EMP018,2026-10-07,Finance,Financial Analyst,Pat Vance,1,0,0,0,0,44,0,0.34,0,0.0,10,0,0,2,0.0,0,NORMAL
+EMP018,2026-10-08,Finance,Financial Analyst,Pat Vance,1,0,0,0,0,58,0,0.44,0,0.0,10,0,0,0,0.0,0,NORMAL
+EMP018,2026-10-09,Finance,Financial Analyst,Pat Vance,1,0,0,0,0,53,0,0.39,0,0.0,12,0,0,1,0.0,0,NORMAL
+EMP018,2026-10-12,Finance,Financial Analyst,Pat Vance,1,0,0,0,0,60,0,0.46,0,0.0,2,0,0,0,0.0,0,NORMAL
+EMP018,2026-10-13,Finance,Financial Analyst,Pat Vance,1,0,0,0,0,24,0,0.17,0,0.0,6,0,0,0,0.0,0,NORMAL
+EMP018,2026-10-14,Finance,Financial Analyst,Pat Vance,1,0,0,1,0,56,0,0.38,0,0.0,12,0,0,1,0.0,0,NORMAL
+EMP019,2026-10-01,HR,Talent Specialist,Sam Davis,1,0,0,1,0,52,0,0.38,0,0.0,12,0,0,0,0.0,0,NORMAL
+EMP019,2026-10-02,HR,Talent Specialist,Sam Davis,1,0,0,0,0,26,0,0.19,0,0.0,7,0,0,0,0.0,0,NORMAL
+EMP019,2026-10-05,HR,Talent Specialist,Sam Davis,1,0,0,0,0,21,0,0.17,0,0.0,10,0,0,0,0.0,0,NORMAL
+EMP019,2026-10-06,HR,Talent Specialist,Sam Davis,1,0,0,0,0,30,0,0.21,0,0.0,11,0,0,0,0.0,0,NORMAL
+EMP019,2026-10-07,HR,Talent Specialist,Sam Davis,1,0,0,0,0,51,0,0.39,0,0.0,10,0,0,0,0.0,0,NORMAL
+EMP019,2026-10-08,HR,Talent Specialist,Sam Davis,1,0,0,0,0,24,0,0.19,0,0.0,14,0,0,0,0.0,0,NORMAL
+EMP019,2026-10-09,HR,Talent Specialist,Sam Davis,1,0,0,0,0,46,0,0.34,0,0.0,12,0,0,0,0.0,0,NORMAL
+EMP019,2026-10-12,HR,Talent Specialist,Sam Davis,1,0,0,0,0,29,0,0.21,0,0.0,5,0,0,0,0.0,0,NORMAL
+EMP019,2026-10-14,HR,Talent Specialist,Sam Davis,1,0,0,0,0,42,0,0.34,0,0.0,8,0,0,0,0.0,0,NORMAL
+EMP020,2026-10-01,Sales,Sales Representative,Riley Chen,1,0,0,0,0,38,0,0.29,0,0.0,13,0,0,0,0.0,0,NORMAL
+EMP020,2026-10-02,Sales,Sales Representative,Riley Chen,1,0,0,0,0,36,0,0.21,0,0.0,4,0,0,0,0.0,0,NORMAL
+EMP020,2026-10-05,Sales,Sales Representative,Riley Chen,1,0,0,0,0,40,0,0.27,0,0.0,11,0,0,0,0.0,0,NORMAL
+EMP020,2026-10-06,Sales,Sales Representative,Riley Chen,1,0,0,0,0,30,0,0.24,0,0.0,5,0,0,0,0.0,0,NORMAL
+EMP020,2026-10-07,Sales,Sales Representative,Riley Chen,1,0,0,0,0,59,0,0.39,0,0.0,12,0,0,0,0.0,0,NORMAL
+EMP020,2026-10-08,Sales,Sales Representative,Riley Chen,1,0,0,0,0,40,0,0.31,0,0.0,12,0,0,0,0.0,0,NORMAL
+EMP020,2026-10-09,Sales,Sales Representative,Riley Chen,1,0,0,0,0,27,0,0.17,0,0.0,11,0,0,0,0.0,0,NORMAL
+EMP020,2026-10-12,Sales,Sales Representative,Riley Chen,1,0,0,0,0,53,0,0.38,0,0.0,9,0,0,0,0.0,0,NORMAL
+EMP020,2026-10-13,Sales,Sales Representative,Riley Chen,1,0,0,0,0,36,0,0.27,0,0.0,13,0,0,0,0.0,0,NORMAL
+EMP020,2026-10-14,Sales,Sales Representative,Riley Chen,1,0,0,0,0,53,0,0.34,0,0.0,6,0,0,0,0.0,0,NORMAL
+EMP021,2026-10-01,Engineering,QA Lead,Jordan Smith,1,0,0,0,0,58,0,0.41,0,0.0,6,0,0,0,0.0,0,NORMAL
+EMP021,2026-10-02,Engineering,QA Lead,Jordan Smith,1,0,0,0,0,49,0,0.33,0,0.0,10,0,0,0,0.0,0,NORMAL
+EMP021,2026-10-05,Engineering,QA Lead,Jordan Smith,1,0,0,0,0,47,0,0.34,0,0.0,13,0,0,0,0.0,0,NORMAL
+EMP021,2026-10-06,Engineering,QA Lead,Jordan Smith,1,0,0,0,0,34,0,0.25,0,0.0,14,0,0,0,0.0,0,NORMAL
+EMP021,2026-10-07,Engineering,QA Lead,Jordan Smith,1,0,0,0,0,20,0,0.13,0,0.0,14,0,0,0,0.0,0,NORMAL
+EMP021,2026-10-08,Engineering,QA Lead,Jordan Smith,1,0,0,0,0,43,0,0.33,0,0.0,5,0,0,0,0.0,0,NORMAL
+EMP021,2026-10-09,Engineering,QA Lead,Jordan Smith,1,0,0,0,0,32,0,0.22,0,0.0,10,0,0,0,0.0,0,NORMAL
+EMP021,2026-10-12,Engineering,QA Lead,Jordan Smith,1,0,0,0,0,21,0,0.12,0,0.0,5,0,0,0,0.0,0,NORMAL
+EMP021,2026-10-13,Engineering,QA Lead,Jordan Smith,1,0,0,0,0,57,0,0.39,0,0.0,11,0,0,0,0.0,0,NORMAL
+EMP021,2026-10-14,Engineering,QA Lead,Jordan Smith,1,0,0,0,0,28,0,0.23,0,0.0,15,0,0,0,0.0,0,NORMAL
+EMP022,2026-10-01,IT_Admin,Database Administrator,Morgan Patel,1,0,0,0,0,45,0,0.3,0,0.0,9,0,0,2,0.0,0,NORMAL
+EMP022,2026-10-02,IT_Admin,Database Administrator,Morgan Patel,1,0,0,0,0,48,0,0.32,0,0.0,11,0,0,0,0.0,0,NORMAL
+EMP022,2026-10-05,IT_Admin,Database Administrator,Morgan Patel,1,0,0,0,0,27,0,0.22,0,0.0,8,0,0,0,0.0,0,NORMAL
+EMP022,2026-10-06,IT_Admin,Database Administrator,Morgan Patel,1,0,0,0,0,24,0,0.19,0,0.0,11,0,0,0,0.0,0,NORMAL
+EMP022,2026-10-07,IT_Admin,Database Administrator,Morgan Patel,1,0,0,0,0,39,0,0.29,0,0.0,7,0,0,0,0.0,0,NORMAL
+EMP022,2026-10-08,IT_Admin,Database Administrator,Morgan Patel,1,0,0,0,0,33,0,0.2,0,0.0,10,0,0,0,0.0,0,NORMAL
+EMP022,2026-10-09,IT_Admin,Database Administrator,Morgan Patel,1,0,0,0,0,44,0,0.35,0,0.0,14,0,0,3,0.0,0,NORMAL
+EMP022,2026-10-12,IT_Admin,Database Administrator,Morgan Patel,1,0,0,0,0,42,0,0.3,0,0.0,10,0,0,0,0.0,0,NORMAL
+EMP022,2026-10-13,IT_Admin,Database Administrator,Morgan Patel,1,0,0,0,0,45,0,0.3,0,0.0,8,0,0,2,0.0,0,NORMAL
+EMP022,2026-10-14,IT_Admin,Database Administrator,Morgan Patel,1,0,0,0,0,59,0,0.47,0,0.0,5,0,0,0,0.0,0,NORMAL
+EMP023,2026-10-01,Finance,Financial Analyst,Morgan Vance,1,0,0,0,0,51,0,0.35,0,0.0,5,0,0,0,0.0,0,NORMAL
+EMP023,2026-10-02,Finance,Financial Analyst,Morgan Vance,1,0,0,0,0,44,0,0.28,0,0.0,7,0,0,1,0.0,0,NORMAL
+EMP023,2026-10-05,Finance,Financial Analyst,Morgan Vance,1,0,0,0,0,51,0,0.36,0,0.0,10,0,0,1,0.0,0,NORMAL
+EMP023,2026-10-06,Finance,Financial Analyst,Morgan Vance,1,0,0,0,0,25,0,0.21,0,0.0,13,0,0,1,0.0,0,NORMAL
+EMP023,2026-10-07,Finance,Financial Analyst,Morgan Vance,1,0,0,0,0,55,0,0.38,0,0.0,11,0,0,3,0.0,0,NORMAL
+EMP023,2026-10-08,Finance,Financial Analyst,Morgan Vance,1,0,0,0,0,41,0,0.31,0,0.0,8,0,0,1,0.0,0,NORMAL
+EMP023,2026-10-09,Finance,Financial Analyst,Morgan Vance,1,0,0,0,0,20,0,0.13,0,0.0,4,0,0,1,0.0,0,NORMAL
+EMP023,2026-10-12,Finance,Financial Analyst,Morgan Vance,1,0,0,0,0,52,0,0.36,0,0.0,11,0,0,0,0.0,0,NORMAL
+EMP023,2026-10-13,Finance,Financial Analyst,Morgan Vance,1,0,0,0,0,24,0,0.17,0,0.0,10,0,0,2,0.0,0,NORMAL
+EMP023,2026-10-14,Finance,Financial Analyst,Morgan Vance,1,0,0,0,0,43,0,0.3,0,0.0,12,0,0,0,0.0,0,NORMAL
+EMP024,2026-10-01,HR,Recruiter,Sam Muller,1,0,0,0,0,23,0,0.17,0,0.0,9,0,0,0,0.0,0,NORMAL
+EMP024,2026-10-02,HR,Recruiter,Sam Muller,1,0,0,0,0,56,0,0.36,0,0.0,11,0,0,0,0.0,0,NORMAL
+EMP024,2026-10-05,HR,Recruiter,Sam Muller,1,0,0,0,0,29,0,0.17,0,0.0,3,0,0,0,0.0,0,NORMAL
+EMP024,2026-10-06,HR,Recruiter,Sam Muller,1,0,0,0,0,57,0,0.39,0,0.0,9,0,0,0,0.0,0,NORMAL
+EMP024,2026-10-08,HR,Recruiter,Sam Muller,1,0,0,0,0,33,0,0.22,0,0.0,5,0,0,0,0.0,0,NORMAL
+EMP024,2026-10-09,HR,Recruiter,Sam Muller,1,0,0,0,0,42,0,0.35,0,0.0,9,0,0,0,0.0,0,NORMAL
+EMP024,2026-10-13,HR,Recruiter,Sam Muller,1,0,0,0,0,35,0,0.24,0,0.0,8,0,0,0,0.0,0,NORMAL
+EMP024,2026-10-14,HR,Recruiter,Sam Muller,1,0,0,0,0,31,0,0.21,0,0.0,4,0,0,0,0.0,0,NORMAL
+EMP025,2026-10-01,Sales,BizDev Lead,Chris Miller,1,0,0,0,0,39,0,0.31,0,0.0,7,0,0,0,0.0,0,NORMAL
+EMP025,2026-10-02,Sales,BizDev Lead,Chris Miller,1,0,0,0,0,52,0,0.37,0,0.0,14,0,0,0,0.0,0,NORMAL
+EMP025,2026-10-05,Sales,BizDev Lead,Chris Miller,1,0,0,0,0,50,0,0.36,0,0.0,11,0,0,0,0.0,0,NORMAL
+EMP025,2026-10-06,Sales,BizDev Lead,Chris Miller,1,0,0,1,0,30,0,0.22,0,0.0,5,0,0,0,3.16,0,NORMAL
+EMP025,2026-10-07,Sales,BizDev Lead,Chris Miller,1,0,0,0,0,20,0,0.14,0,0.0,9,0,0,0,0.0,0,NORMAL
+EMP025,2026-10-08,Sales,BizDev Lead,Chris Miller,1,0,0,1,0,28,0,0.2,0,0.0,13,0,0,0,3.16,0,NORMAL
+EMP025,2026-10-09,Sales,BizDev Lead,Chris Miller,1,0,0,0,0,34,0,0.27,0,0.0,3,0,0,0,0.0,0,NORMAL
+EMP025,2026-10-12,Sales,BizDev Lead,Chris Miller,1,0,0,0,0,51,0,0.37,0,0.0,5,0,0,0,0.0,0,NORMAL
+EMP025,2026-10-13,Sales,BizDev Lead,Chris Miller,1,0,0,0,0,53,0,0.46,0,0.0,9,0,0,0,0.0,0,NORMAL
+EMP025,2026-10-14,Sales,BizDev Lead,Chris Miller,1,0,0,0,0,53,0,0.4,0,0.0,10,0,0,0,0.0,0,NORMAL
+EMP026,2026-10-01,Engineering,DevOps Engineer,Chris Chen,1,0,0,0,0,46,0,0.33,0,0.0,9,0,0,0,0.0,0,NORMAL
+EMP026,2026-10-02,Engineering,DevOps Engineer,Chris Chen,1,0,0,0,0,44,0,0.34,0,0.0,17,0,0,0,0.0,0,NORMAL
+EMP026,2026-10-05,Engineering,DevOps Engineer,Chris Chen,1,0,0,0,0,48,0,0.36,0,0.0,14,0,0,0,0.0,0,NORMAL
+EMP026,2026-10-06,Engineering,DevOps Engineer,Chris Chen,1,0,0,0,0,24,0,0.17,0,0.0,6,0,0,0,0.0,0,NORMAL
+EMP026,2026-10-07,Engineering,DevOps Engineer,Chris Chen,1,0,0,0,0,44,0,0.34,0,0.0,12,0,0,0,0.0,0,NORMAL
+EMP026,2026-10-08,Engineering,DevOps Engineer,Chris Chen,1,0,0,0,0,20,0,0.17,0,0.0,9,0,0,0,0.0,0,NORMAL
+EMP026,2026-10-09,Engineering,DevOps Engineer,Chris Chen,1,0,0,0,0,35,0,0.26,0,0.0,14,0,0,0,0.0,0,NORMAL
+EMP026,2026-10-12,Engineering,DevOps Engineer,Chris Chen,1,0,0,0,0,59,0,0.43,0,0.0,12,0,0,0,0.0,0,NORMAL
+EMP026,2026-10-13,Engineering,DevOps Engineer,Chris Chen,1,0,0,0,0,27,0,0.2,0,0.0,17,0,0,0,0.0,0,NORMAL
+EMP026,2026-10-14,Engineering,DevOps Engineer,Chris Chen,1,0,0,0,0,57,0,0.35,0,0.0,11,0,0,0,0.0,0,NORMAL
+EMP027,2026-10-01,IT_Admin,Database Administrator,Sam Vance,1,0,0,0,0,36,0,0.28,0,0.0,11,0,0,1,0.0,0,NORMAL
+EMP027,2026-10-04,IT_Admin,Database Administrator,Sam Vance,1,0,1,0,0,39,0,0.28,0,0.0,9,0,0,0,0.0,0,NORMAL
+EMP027,2026-10-05,IT_Admin,Database Administrator,Sam Vance,1,0,0,0,0,20,0,0.19,0,0.0,15,0,0,0,0.0,0,NORMAL
+EMP027,2026-10-06,IT_Admin,Database Administrator,Sam Vance,1,0,0,0,0,43,0,0.29,0,0.0,6,0,0,0,0.0,0,NORMAL
+EMP027,2026-10-07,IT_Admin,Database Administrator,Sam Vance,1,0,0,0,0,28,0,0.2,0,0.0,15,0,0,0,0.0,0,NORMAL
+EMP027,2026-10-08,IT_Admin,Database Administrator,Sam Vance,1,0,0,0,0,56,0,0.45,0,0.0,9,0,0,1,0.0,0,NORMAL
+EMP027,2026-10-09,IT_Admin,Database Administrator,Sam Vance,1,0,0,0,0,32,0,0.24,0,0.0,10,0,0,3,0.0,0,NORMAL
+EMP027,2026-10-12,IT_Admin,Database Administrator,Sam Vance,1,0,0,0,0,57,0,0.43,0,0.0,7,0,0,1,0.0,0,NORMAL
+EMP027,2026-10-13,IT_Admin,Database Administrator,Sam Vance,1,0,0,0,0,26,0,0.2,0,0.0,8,0,0,0,0.0,0,NORMAL
+EMP027,2026-10-14,IT_Admin,Database Administrator,Sam Vance,1,0,0,0,0,33,0,0.28,0,0.0,16,0,0,3,0.0,0,NORMAL
+EMP028,2026-10-01,Finance,Payroll Specialist,Taylor Brown,1,0,0,0,0,41,0,0.33,0,0.0,14,0,0,1,0.0,0,NORMAL
+EMP028,2026-10-02,Finance,Payroll Specialist,Taylor Brown,1,0,0,0,0,40,0,0.27,0,0.0,5,0,0,0,0.0,0,NORMAL
+EMP028,2026-10-05,Finance,Payroll Specialist,Taylor Brown,1,0,0,0,0,27,0,0.17,0,0.0,13,0,0,2,0.0,0,NORMAL
+EMP028,2026-10-06,Finance,Payroll Specialist,Taylor Brown,1,0,0,0,0,28,0,0.2,0,0.0,4,0,0,0,0.0,0,NORMAL
+EMP028,2026-10-07,Finance,Payroll Specialist,Taylor Brown,1,0,0,0,0,59,0,0.45,0,0.0,10,0,0,0,0.0,0,NORMAL
+EMP028,2026-10-08,Finance,Payroll Specialist,Taylor Brown,1,0,0,0,0,39,0,0.25,0,0.0,11,0,0,0,0.0,0,NORMAL
+EMP028,2026-10-09,Finance,Payroll Specialist,Taylor Brown,1,0,0,0,0,40,0,0.34,0,0.0,8,0,0,0,0.0,1,ACCOUNT_COMPROMISE
+EMP028,2026-10-10,Finance,Payroll Specialist,Taylor Brown,1,1,1,0,0,97,46,2300.54,15,493.45,14,0,0,2,3.96,1,ACCOUNT_COMPROMISE
+EMP028,2026-10-11,Finance,Payroll Specialist,Taylor Brown,1,1,1,0,0,80,34,1474.67,10,254.92,6,0,0,1,2.41,1,ACCOUNT_COMPROMISE
+EMP028,2026-10-12,Finance,Payroll Specialist,Taylor Brown,1,1,0,0,0,114,53,2328.11,12,284.53,7,0,0,0,3.87,1,ACCOUNT_COMPROMISE
+EMP028,2026-10-13,Finance,Payroll Specialist,Taylor Brown,1,1,0,0,0,106,54,2379.47,20,563.05,14,0,0,4,4.24,1,ACCOUNT_COMPROMISE
+EMP028,2026-10-14,Finance,Payroll Specialist,Taylor Brown,1,1,0,0,0,128,43,1789.39,13,291.44,13,0,0,0,2.9,1,ACCOUNT_COMPROMISE
+EMP029,2026-10-01,HR,Talent Specialist,Morgan Miller,1,0,0,0,0,59,0,0.45,0,0.0,6,0,0,0,0.0,0,NORMAL
+EMP029,2026-10-02,HR,Talent Specialist,Morgan Miller,1,0,0,0,0,53,0,0.41,0,0.0,10,0,0,0,0.0,0,NORMAL
+EMP029,2026-10-05,HR,Talent Specialist,Morgan Miller,1,0,0,0,0,39,0,0.33,0,0.0,14,0,0,0,0.0,0,NORMAL
+EMP029,2026-10-06,HR,Talent Specialist,Morgan Miller,1,0,0,0,0,23,0,0.17,0,0.0,10,0,0,0,0.0,0,NORMAL
+EMP029,2026-10-07,HR,Talent Specialist,Morgan Miller,1,0,0,0,0,26,0,0.15,0,0.0,16,0,0,0,0.0,0,NORMAL
+EMP029,2026-10-08,HR,Talent Specialist,Morgan Miller,1,0,0,0,0,44,0,0.28,0,0.0,15,0,0,0,0.0,0,NORMAL
+EMP029,2026-10-09,HR,Talent Specialist,Morgan Miller,1,0,0,0,0,59,0,0.41,0,0.0,7,0,0,0,0.0,0,NORMAL
+EMP029,2026-10-10,HR,Talent Specialist,Morgan Miller,1,0,1,0,0,35,0,0.26,0,0.0,5,0,0,0,0.0,0,NORMAL
+EMP029,2026-10-12,HR,Talent Specialist,Morgan Miller,1,0,0,0,0,45,0,0.33,0,0.0,3,0,0,0,0.0,0,NORMAL
+EMP029,2026-10-13,HR,Talent Specialist,Morgan Miller,1,0,0,0,0,22,0,0.17,0,0.0,6,0,0,0,0.0,0,NORMAL
+EMP029,2026-10-14,HR,Talent Specialist,Morgan Miller,1,0,0,0,0,46,0,0.33,0,0.0,11,0,0,0,0.0,0,NORMAL
+EMP030,2026-10-01,Sales,Sales Representative,Pat Patel,1,0,0,0,0,57,0,0.36,0,0.0,5,0,0,0,0.0,0,NORMAL
+EMP030,2026-10-02,Sales,Sales Representative,Pat Patel,1,0,0,0,0,35,0,0.23,0,0.0,11,0,0,0,0.0,0,NORMAL
+EMP030,2026-10-04,Sales,Sales Representative,Pat Patel,1,0,1,0,0,52,0,0.35,0,0.0,4,0,0,0,0.0,0,NORMAL
+EMP030,2026-10-05,Sales,Sales Representative,Pat Patel,1,0,0,0,0,31,0,0.21,0,0.0,7,0,0,0,0.0,0,NORMAL
+EMP030,2026-10-06,Sales,Sales Representative,Pat Patel,1,0,0,0,0,60,0,0.44,0,0.0,6,0,0,0,0.0,0,NORMAL
+EMP030,2026-10-07,Sales,Sales Representative,Pat Patel,1,0,0,0,0,43,0,0.33,0,0.0,9,0,0,0,0.0,0,NORMAL
+EMP030,2026-10-08,Sales,Sales Representative,Pat Patel,1,0,0,0,0,22,0,0.15,0,0.0,5,0,0,0,0.0,0,NORMAL
+EMP030,2026-10-09,Sales,Sales Representative,Pat Patel,1,0,0,0,0,47,0,0.36,0,0.0,8,0,0,0,0.0,0,NORMAL
+EMP030,2026-10-12,Sales,Sales Representative,Pat Patel,1,0,0,0,0,37,0,0.32,0,0.0,6,0,0,0,0.0,0,NORMAL
+EMP030,2026-10-13,Sales,Sales Representative,Pat Patel,1,0,0,0,0,20,0,0.15,0,0.0,5,0,0,0,0.0,0,NORMAL
+EMP030,2026-10-14,Sales,Sales Representative,Pat Patel,1,0,0,0,0,59,0,0.4,0,0.0,15,0,0,0,0.0,0,NORMAL
+EMP031,2026-10-01,Engineering,QA Lead,Casey Chen,1,0,0,0,0,58,0,0.41,0,0.0,5,0,0,0,0.0,0,NORMAL
+EMP031,2026-10-05,Engineering,QA Lead,Casey Chen,1,0,0,0,0,37,0,0.26,0,0.0,8,0,0,0,0.0,0,NORMAL
+EMP031,2026-10-06,Engineering,QA Lead,Casey Chen,1,0,0,0,0,28,0,0.17,0,0.0,14,0,0,0,0.0,0,NORMAL
+EMP031,2026-10-07,Engineering,QA Lead,Casey Chen,1,0,0,0,0,27,0,0.19,0,0.0,13,0,0,0,0.0,0,NORMAL
+EMP031,2026-10-08,Engineering,QA Lead,Casey Chen,1,0,0,0,0,27,0,0.17,0,0.0,11,0,0,0,0.0,0,NORMAL
+EMP031,2026-10-09,Engineering,QA Lead,Casey Chen,1,0,0,0,0,40,0,0.28,0,0.0,9,0,0,0,0.0,0,NORMAL
+EMP031,2026-10-12,Engineering,QA Lead,Casey Chen,1,0,0,0,0,56,0,0.4,0,0.0,14,0,0,0,0.0,0,NORMAL
+EMP031,2026-10-13,Engineering,QA Lead,Casey Chen,1,0,0,0,0,58,0,0.44,0,0.0,14,0,0,0,0.0,0,NORMAL
+EMP031,2026-10-14,Engineering,QA Lead,Casey Chen,1,0,0,0,0,52,0,0.39,0,0.0,12,0,0,0,0.0,0,NORMAL
+EMP032,2026-10-01,IT_Admin,Database Administrator,Chris Smith,1,0,0,0,0,24,0,0.18,0,0.0,9,0,0,0,0.0,0,NORMAL
+EMP032,2026-10-02,IT_Admin,Database Administrator,Chris Smith,1,0,0,0,0,23,0,0.15,0,0.0,8,0,0,0,0.0,0,NORMAL
+EMP032,2026-10-06,IT_Admin,Database Administrator,Chris Smith,1,0,0,0,0,46,0,0.38,0,0.0,12,0,0,0,0.0,0,NORMAL
+EMP032,2026-10-07,IT_Admin,Database Administrator,Chris Smith,1,0,0,0,0,51,0,0.35,0,0.0,13,0,0,1,0.0,0,NORMAL
+EMP032,2026-10-08,IT_Admin,Database Administrator,Chris Smith,1,0,0,1,0,38,0,0.23,0,0.0,10,0,0,3,0.0,0,NORMAL
+EMP032,2026-10-09,IT_Admin,Database Administrator,Chris Smith,1,0,0,0,0,56,0,0.45,0,0.0,8,0,0,1,0.0,0,NORMAL
+EMP032,2026-10-12,IT_Admin,Database Administrator,Chris Smith,1,0,0,1,0,38,0,0.27,0,0.0,9,0,0,2,0.0,0,NORMAL
+EMP032,2026-10-13,IT_Admin,Database Administrator,Chris Smith,1,0,0,0,0,23,0,0.14,0,0.0,4,0,0,1,0.0,0,NORMAL
+EMP032,2026-10-14,IT_Admin,Database Administrator,Chris Smith,1,0,0,0,0,45,0,0.3,0,0.0,5,0,0,1,0.0,0,NORMAL
+EMP033,2026-10-01,Finance,Financial Analyst,Alex Garcia,1,0,0,0,0,36,0,0.28,0,0.0,13,0,0,1,0.0,0,NORMAL
+EMP033,2026-10-05,Finance,Financial Analyst,Alex Garcia,1,0,0,0,0,30,0,0.21,0,0.0,10,0,0,1,0.0,0,NORMAL
+EMP033,2026-10-06,Finance,Financial Analyst,Alex Garcia,1,0,0,0,0,58,0,0.48,0,0.0,6,0,0,1,0.0,0,NORMAL
+EMP033,2026-10-07,Finance,Financial Analyst,Alex Garcia,1,0,0,0,0,43,0,0.27,0,0.0,16,0,0,0,0.0,0,NORMAL
+EMP033,2026-10-08,Finance,Financial Analyst,Alex Garcia,1,0,0,0,0,24,0,0.16,0,0.0,16,0,0,1,0.0,0,NORMAL
+EMP033,2026-10-09,Finance,Financial Analyst,Alex Garcia,1,0,0,0,0,26,0,0.19,0,0.0,7,0,0,1,0.0,0,NORMAL
+EMP033,2026-10-12,Finance,Financial Analyst,Alex Garcia,1,0,0,0,0,27,0,0.24,0,0.0,6,0,0,0,0.0,0,NORMAL
+EMP033,2026-10-13,Finance,Financial Analyst,Alex Garcia,1,0,0,0,0,23,0,0.18,0,0.0,6,0,0,0,0.0,0,NORMAL
+EMP033,2026-10-14,Finance,Financial Analyst,Alex Garcia,1,0,0,0,0,41,0,0.3,0,0.0,10,0,0,3,0.0,0,NORMAL
+EMP034,2026-10-01,HR,Recruiter,Sam Vance,1,0,0,0,0,48,0,0.32,0,0.0,13,0,0,0,0.0,0,NORMAL
+EMP034,2026-10-02,HR,Recruiter,Sam Vance,1,0,0,0,0,40,0,0.29,0,0.0,5,0,0,0,0.0,0,NORMAL
+EMP034,2026-10-05,HR,Recruiter,Sam Vance,1,0,0,0,0,51,0,0.37,0,0.0,12,0,0,0,0.0,0,NORMAL
+EMP034,2026-10-06,HR,Recruiter,Sam Vance,1,0,0,0,0,52,0,0.43,0,0.0,15,0,0,0,0.0,0,NORMAL
+EMP034,2026-10-07,HR,Recruiter,Sam Vance,1,0,0,0,0,33,0,0.25,0,0.0,10,0,0,0,0.0,0,NORMAL
+EMP034,2026-10-09,HR,Recruiter,Sam Vance,1,0,0,0,0,53,0,0.37,0,0.0,15,0,0,0,0.0,0,NORMAL
+EMP034,2026-10-12,HR,Recruiter,Sam Vance,1,0,0,0,0,55,0,0.39,0,0.0,8,0,0,0,0.0,0,NORMAL
+EMP034,2026-10-13,HR,Recruiter,Sam Vance,1,0,0,0,0,28,0,0.22,0,0.0,9,0,0,0,0.0,0,NORMAL
+EMP034,2026-10-14,HR,Recruiter,Sam Vance,1,0,0,0,0,21,0,0.17,0,0.0,6,0,0,0,0.0,0,NORMAL
+EMP035,2026-10-01,Sales,Account Executive,Riley Garcia,1,0,0,0,0,44,0,0.33,0,0.0,11,0,0,0,0.0,0,NORMAL
+EMP035,2026-10-02,Sales,Account Executive,Riley Garcia,1,0,0,0,0,52,0,0.4,0,0.0,11,0,0,0,0.0,0,NORMAL
+EMP035,2026-10-05,Sales,Account Executive,Riley Garcia,1,0,0,0,0,49,0,0.32,0,0.0,12,0,0,0,0.0,0,NORMAL
+EMP035,2026-10-06,Sales,Account Executive,Riley Garcia,1,0,0,1,0,56,0,0.42,0,0.0,6,0,0,0,3.17,0,NORMAL
+EMP035,2026-10-07,Sales,Account Executive,Riley Garcia,1,0,0,0,0,36,0,0.26,0,0.0,14,0,0,0,0.0,0,NORMAL
+EMP035,2026-10-08,Sales,Account Executive,Riley Garcia,1,0,0,0,0,42,0,0.29,0,0.0,14,0,0,0,0.0,0,NORMAL
+EMP035,2026-10-09,Sales,Account Executive,Riley Garcia,1,0,0,0,0,31,0,0.2,0,0.0,7,0,0,0,0.0,0,NORMAL
+EMP035,2026-10-13,Sales,Account Executive,Riley Garcia,1,0,0,0,0,49,0,0.34,0,0.0,6,0,0,0,0.0,0,NORMAL
+EMP035,2026-10-14,Sales,Account Executive,Riley Garcia,1,0,0,0,0,55,0,0.44,0,0.0,6,0,0,0,0.0,0,NORMAL

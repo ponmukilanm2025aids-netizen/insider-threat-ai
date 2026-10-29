@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CyberSentry | AI Insider Threat Detection SOC</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Chart.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body class="bg-[#0B0F19] text-gray-100 min-h-screen font-sans antialiased selection:bg-red-500 selection:text-white">
+
+  <!-- Top Navigation Header -->
+  <header class="border-b border-gray-800 bg-[#0F172A]/90 backdrop-blur sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+        <div class="h-9 w-9 rounded-lg bg-red-600/20 border border-red-500/50 flex items-center justify-center text-red-400 font-black">
+          🛡️
+        </div>
+        <div>
+          <span class="text-lg font-bold tracking-wider text-white">CYBER<span class="text-red-500">SENTRY</span></span>
+          <span class="ml-2 text-xs font-mono px-2 py-0.5 rounded bg-gray-800 text-gray-400 border border-gray-700">UEBA AI v1.0</span>
+        </div>
+      </div>
+      
+      <div class="flex items-center space-x-6 text-sm">
+        <div class="flex items-center space-x-2">
+          <span class="relative flex h-2.5 w-2.5">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
+          </span>
+          <span class="text-xs font-mono text-emerald-400">ENGINE ACTIVE</span>
+        </div>
+        <button onclick="switchTab('overview')" class="tab-btn active text-gray-300 hover:text-white px-3 py-1.5 rounded-md font-medium text-xs font-mono" id="tab-overview-btn">
+          OVERVIEW & LEADERBOARD
+        </button>
+        <button onclick="switchTab('simulator')" class="tab-btn text-gray-400 hover:text-white px-3 py-1.5 rounded-md font-medium text-xs font-mono" id="tab-simulator-btn">
+          ⚡ WHAT-IF ATTACK SIMULATOR
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8">
+    
+    <!-- STATS OVERVIEW CARDS -->
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+      <div class="stat-card bg-[#111827] border border-gray-800 rounded-xl p-5 shadow-lg">
+        <div class="text-xs font-mono text-gray-400 tracking-wider">EMPLOYEES MONITORED</div>
+        <div class="mt-2 text-3xl font-extrabold text-white font-mono" id="stat-monitored-users">--</div>
+        <div class="mt-1 text-xs text-gray-500 font-mono">14 days behavioral history</div>
+      </div>
+
+      <div class="stat-card bg-[#111827] border border-gray-800 rounded-xl p-5 shadow-lg">
+        <div class="text-xs font-mono text-gray-400 tracking-wider">SESSIONS ANALYZED</div>
+        <div class="mt-2 text-3xl font-extrabold text-white font-mono" id="stat-total-sessions">--</div>
+        <div class="mt-1 text-xs text-cyan-400 font-mono">Isolation Forest + Autoencoder</div>
+      </div>
+
+      <div class="stat-card bg-[#111827] border border-red-900/40 bg-red-950/10 rounded-xl p-5 shadow-lg">
+        <div class="text-xs font-mono text-red-400 tracking-wider">CRITICAL INSIDER THREATS</div>
+        <div class="mt-2 text-3xl font-extrabold text-red-400 font-mono" id="stat-critical-threats">--</div>
+        <div class="mt-1 text-xs text-red-500/80 font-mono">Immediate containment required</div>
+      </div>
+
+      <div class="stat-card bg-[#111827] border border-gray-800 rounded-xl p-5 shadow-lg">
+        <div class="text-xs font-mono text-gray-400 tracking-wider">FLEET ANOMALY RATE</div>
+        <div class="mt-2 text-3xl font-extrabold text-amber-400 font-mono" id="stat-anomaly-rate">--%</div>
+        <div class="mt-1 text-xs text-amber-500/80 font-mono">Statistical deviation score</div>
+      </div>
+    </div>
+
+    <!-- VIEW 1: OVERVIEW & THREAT BOARD -->
+    <div id="view-overview" class="space-y-8">
+      
+      <!-- Charts Grid -->
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <!-- Daily Trend -->
+        <div class="lg:col-span-2 bg-[#111827] border border-gray-800 rounded-xl p-5 shadow-lg">
+          <div class="flex items-center justify-between mb-4">
+            <h3 class="text-sm font-semibold font-mono tracking-wider text-gray-200 uppercase">
+              📊 Threat Incident Timeline (14-Day Velocity)
+            </h3>
+            <span class="text-xs font-mono text-gray-500">Events / Day</span>
+          </div>
+          <div class="h-64">
+            <canvas id="timelineChart"></canvas>
+          </div>
+        </div>
+
+        <!-- Department Breakdown -->
+        <div class="bg-[#111827] border border-gray-800 rounded-xl p-5 shadow-lg">
+          <div class="flex items-center justify-between mb-4">
+            <h3 class="text-sm font-semibold font-mono tracking-wider text-gray-200 uppercase">
+              🏢 Threats by Department
+            </h3>
+          </div>
+          <div class="h-64 flex items-center justify-center">
+            <canvas id="deptChart"></canvas>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ranked Threat Leaderboard -->
+      <div class="bg-[#111827] border border-gray-800 rounded-xl shadow-lg overflow-hidden">
+        <div class="px-6 py-4 border-b border-gray-800 flex justify-between items-center bg-[#162032]">
+          <div class="flex items-center space-x-2">
+            <span class="text-sm font-bold font-mono tracking-wider text-white uppercase">
+              🚨 Fleet Threat Risk Matrix & Leaderboard
+            </span>
+          </div>
+          <div class="text-xs font-mono text-gray-400">
+            Sorted by Peak Risk Score
+          </div>
+        </div>
+
+        <div class="overflow-x-auto">
+          <table class="w-full text-left border-collapse text-sm">
+            <thead>
+              <tr class="bg-[#0D131F] text-gray-400 font-mono text-xs border-b border-gray-800">
+                <th class="py-3 px-6">EMPLOYEE</th>
+                <th class="py-3 px-6">DEPARTMENT & ROLE</th>
+                <th class="py-3 px-6">RISK SCORE</th>
+                <th class="py-3 px-6">SEVERITY</th>
+                <th class="py-3 px-6">AI DETECTED VECTOR</th>
+                <th class="py-3 px-6">INCIDENT DATE</th>
+                <th class="py-3 px-6 text-right">ACTION</th>
+              </tr>
+            </thead>
+            <tbody id="threat-table-body" class="divide-y divide-gray-800 font-mono text-xs">
+              <!-- Dynamically populated -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- VIEW 2: WHAT-IF ATTACK SIMULATOR -->
+    <div id="view-simulator" class="hidden space-y-6">
+      <div class="bg-[#111827] border border-gray-800 rounded-xl p-6 shadow-xl">
+        <div class="border-b border-gray-800 pb-4 mb-6">
+          <h2 class="text-lg font-bold text-white font-mono flex items-center space-x-2">
+            <span>⚡ Interactive What-If Threat Simulator</span>
+          </h2>
+          <p class="text-xs text-gray-400 mt-1 font-mono">
+            Adjust behavioral telemetry parameters to test real-time AI anomaly detection, Autoencoder reconstruction error, and heuristic threat categorization.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <!-- Controls Column -->
+          <div class="lg:col-span-2 space-y-5">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              
+              <!-- Control 1: After Hours USB -->
+              <div class="bg-[#0B0F19] p-4 rounded-lg border border-gray-800">
+                <div class="flex justify-between items-center mb-2">
+                  <label class="text-xs font-mono text-gray-300">After-Hours USB Connections</label>
+                  <span id="val-usb" class="text-xs font-mono font-bold text-red-400">1</span>
+                </div>
+                <input id="input-usb" type="range" min="0" max="5" value="1" step="1" class="w-full accent-red-500" oninput="updateSim()">
+                <div class="flex justify-between text-[10px] text-gray-600 font-mono mt-1">
+                  <span>0 (None)</span>
+                  <span>5 (Mass Transfer)</span>
+                </div>
+              </div>
+
+              <!-- Control 2: Upload MB -->
+              <div class="bg-[#0B0F19] p-4 rounded-lg border border-gray-800">
+                <div class="flex justify-between items-center mb-2">
+                  <label class="text-xs font-mono text-gray-300">Cloud Exfiltration Upload (MB)</label>
+                  <span id="val-upload" class="text-xs font-mono font-bold text-amber-400">650 MB</span>
+                </div>
+                <input id="input-upload" type="range" min="0" max="1500" value="650" step="25" class="w-full accent-amber-500" oninput="updateSim()">
+                <div class="flex justify-between text-[10px] text-gray-600 font-mono mt-1">
+                  <span>0 MB</span>
+                  <span>1,500 MB</span>
+                </div>
+              </div>
+
+              <!-- Control 3: Files Deleted -->
+              <div class="bg-[#0B0F19] p-4 rounded-lg border border-gray-800">
+                <div class="flex justify-between items-center mb-2">
+                  <label class="text-xs font-mono text-gray-300">Mass Files Deleted (Sabotage)</label>
+                  <span id="val-deleted" class="text-xs font-mono font-bold text-red-400">0</span>
+                </div>
+                <input id="input-deleted" type="range" min="0" max="60" value="0" step="1" class="w-full accent-red-500" oninput="updateSim()">
+                <div class="flex justify-between text-[10px] text-gray-600 font-mono mt-1">
+                  <span>0</span>
+                  <span>60 Files</span>
+                </div>
+              </div>
+
+              <!-- Control 4: Sensitive Files Read -->
+              <div class="bg-[#0B0F19] p-4 rounded-lg border border-gray-800">
+                <div class="flex justify-between items-center mb-2">
+                  <label class="text-xs font-mono text-gray-300">Sensitive Files Accessed</label>
+                  <span id="val-sens" class="text-xs font-mono font-bold text-yellow-400">8</span>
+                </div>
+                <input id="input-sens" type="range" min="0" max="25" value="8" step="1" class="w-full accent-yellow-500" oninput="updateSim()">
+                <div class="flex justify-between text-[10px] text-gray-600 font-mono mt-1">
+                  <span>0</span>
+                  <span>25 Files</span>
+                </div>
+              </div>
+
+              <!-- Control 5: After hours logons -->
+              <div class="bg-[#0B0F19] p-4 rounded-lg border border-gray-800">
+                <div class="flex justify-between items-center mb-2">
+                  <label class="text-xs font-mono text-gray-300">After-Hours Logins (20:00 - 06:00)</label>
+                  <span id="val-logon" class="text-xs font-mono font-bold text-cyan-400">1</span>
+                </div>
+                <input id="input-logon" type="range" min="0" max="4" value="1" step="1" class="w-full accent-cyan-500" oninput="updateSim()">
+                <div class="flex justify-between text-[10px] text-gray-600 font-mono mt-1">
+                  <span>0</span>
+                  <span>4 Logins</span>
+                </div>
+              </div>
+
+              <!-- Control 6: External emails -->
+              <div class="bg-[#0B0F19] p-4 rounded-lg border border-gray-800">
+                <div class="flex justify-between items-center mb-2">
+                  <label class="text-xs font-mono text-gray-300">External Emails Sent</label>
+                  <span id="val-email" class="text-xs font-mono font-bold text-purple-400">2</span>
+                </div>
+                <input id="input-email" type="range" min="0" max="20" value="2" step="1" class="w-full accent-purple-500" oninput="updateSim()">
+                <div class="flex justify-between text-[10px] text-gray-600 font-mono mt-1">
+                  <span>0</span>
+                  <span>20 Emails</span>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Preset Buttons -->
+            <div class="pt-2 flex flex-wrap gap-2">
+              <span class="text-xs font-mono text-gray-500 py-1">Quick Presets:</span>
+              <button onclick="setSimPreset('normal')" class="text-xs font-mono px-3 py-1 bg-gray-800 hover:bg-gray-700 text-gray-300 rounded border border-gray-700">
+                🟢 Normal Employee
+              </button>
+              <button onclick="setSimPreset('exfil')" class="text-xs font-mono px-3 py-1 bg-red-950/60 hover:bg-red-900/80 text-red-300 rounded border border-red-800">
+                🚨 USB Data Exfiltration
+              </button>
+              <button onclick="setSimPreset('sabotage')" class="text-xs font-mono px-3 py-1 bg-orange-950/60 hover:bg-orange-900/80 text-orange-300 rounded border border-orange-800">
+                🔥 IT Privilege Sabotage
+              </button>
+              <button onclick="setSimPreset('account_takeover')" class="text-xs font-mono px-3 py-1 bg-purple-950/60 hover:bg-purple-900/80 text-purple-300 rounded border border-purple-800">
+                👤 Account Takeover
+              </button>
+            </div>
+          </div>
+
+          <!-- Live AI Inference Gauge Card -->
+          <div class="bg-[#0B0F19] p-6 rounded-xl border border-gray-800 flex flex-col justify-between">
+            <div>
+              <div class="text-xs font-mono text-gray-400 tracking-wider">AI ENSEMBLE THREAT SCORE</div>
+              <div class="mt-4 flex items-baseline space-x-2">
+                <span id="sim-score" class="text-5xl font-black font-mono text-red-400">92.4</span>
+                <span class="text-gray-500 font-mono text-sm">/ 100</span>
+              </div>
+              
+              <div class="mt-3">
+                <span id="sim-badge" class="px-3 py-1 rounded text-xs font-mono font-bold bg-red-950 text-red-400 border border-red-800">
+                  CRITICAL
+                </span>
+              </div>
+
+              <div class="mt-6 space-y-3 font-mono text-xs">
+                <div class="flex justify-between border-b border-gray-800 pb-2">
+                  <span class="text-gray-400">Predicted Threat Vector:</span>
+                  <span id="sim-vector" class="text-white font-bold">DATA_EXFILTRATION</span>
+                </div>
+                <div class="flex justify-between border-b border-gray-800 pb-2">
+                  <span class="text-gray-400">Model Confidence:</span>
+                  <span id="sim-conf" class="text-emerald-400 font-bold">98.5%</span>
+                </div>
+                <div class="flex justify-between border-b border-gray-800 pb-2">
+                  <span class="text-gray-400">Isolation Forest Risk:</span>
+                  <span id="sim-iso" class="text-cyan-400 font-bold">88.0</span>
+                </div>
+                <div class="flex justify-between border-b border-gray-800 pb-2">
+                  <span class="text-gray-400">Autoencoder MSE Score:</span>
+                  <span id="sim-ae" class="text-purple-400 font-bold">94.2</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-6 bg-[#162032] p-4 rounded-lg border border-gray-800">
+              <div class="text-[11px] font-mono font-bold text-gray-300 uppercase mb-2">🔍 Top Explainability Reason</div>
+              <p id="sim-top-reason" class="text-xs text-gray-400 font-mono">
+                Unauthorized After-Hours USB Activity (+35.0 pts)
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- INVESTIGATION MODAL (DEEP DIVE REPORT) -->
+    <div id="investigate-modal" class="hidden fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4">
+      <div class="bg-[#111827] border border-gray-800 w-full max-w-5xl rounded-2xl shadow-2xl overflow-hidden max-h-[92vh] flex flex-col">
+        
+        <!-- Modal Header -->
+        <div class="px-6 py-4 bg-[#162032] border-b border-gray-800 flex justify-between items-center">
+          <div class="flex items-center space-x-3">
+            <span class="text-red-500 font-mono text-lg">⚠️</span>
+            <div>
+              <h2 class="text-base font-bold font-mono text-white" id="modal-user-title">INVESTIGATION: EMP014</h2>
+              <span class="text-xs font-mono text-gray-400" id="modal-user-sub">Alex Chen • Engineering • Software Engineer</span>
+            </div>
+          </div>
+          <button onclick="closeModal()" class="text-gray-400 hover:text-white font-mono text-xl px-2">✕</button>
+        </div>
+
+        <!-- Modal Body (Scrollable) -->
+        <div class="p-6 overflow-y-auto space-y-6">
+          
+          <!-- Summary Row -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div class="bg-[#0B0F19] p-4 rounded-xl border border-gray-800">
+              <span class="text-xs font-mono text-gray-400">Threat Score</span>
+              <div class="flex items-baseline space-x-2 mt-1">
+                <span class="text-3xl font-black font-mono" id="modal-score">--</span>
+                <span id="modal-badge" class="px-2 py-0.5 rounded text-[10px] font-mono font-bold">--</span>
+              </div>
+            </div>
+
+            <div class="bg-[#0B0F19] p-4 rounded-xl border border-gray-800">
+              <span class="text-xs font-mono text-gray-400">Classified Vector</span>
+              <div class="text-sm font-bold font-mono text-white mt-2" id="modal-vector">--</div>
+              <div class="text-[11px] font-mono text-emerald-400 mt-1" id="modal-confidence">Confidence: --%</div>
+            </div>
+
+            <div class="bg-[#0B0F19] p-4 rounded-xl border border-gray-800">
+              <span class="text-xs font-mono text-gray-400">Peak Incident Date</span>
+              <div class="text-base font-bold font-mono text-white mt-2" id="modal-date">--</div>
+              <div class="text-[11px] font-mono text-gray-500 mt-1">Automated SOC Alert</div>
+            </div>
+          </div>
+
+          <!-- Radar / Baseline Comparison & Explainability -->
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            
+            <!-- User vs Peer Baseline Chart -->
+            <div class="bg-[#0B0F19] p-4 rounded-xl border border-gray-800">
+              <h4 class="text-xs font-mono font-bold text-gray-300 uppercase mb-3">
+                📈 Behavior Deviation vs Department Average
+              </h4>
+              <div class="h-60">
+                <canvas id="baselineChart"></canvas>
+              </div>
+            </div>
+
+            <!-- Explainability Attribution -->
+            <div class="bg-[#0B0F19] p-4 rounded-xl border border-gray-800">
+              <h4 class="text-xs font-mono font-bold text-gray-300 uppercase mb-3">
+                🧠 Explainable AI (XAI) Attribution Breakdown
+              </h4>
+              <div id="modal-explanations" class="space-y-2 max-h-60 overflow-y-auto pr-2">
+                <!-- Explanations inserted dynamically -->
+              </div>
+            </div>
+          </div>
+
+          <!-- Chronological Incident Timeline -->
+          <div class="bg-[#0B0F19] p-4 rounded-xl border border-gray-800">
+            <h4 class="text-xs font-mono font-bold text-gray-300 uppercase mb-3">
+              ⏱️ Forensic Event Chain & Activity Timeline
+            </h4>
+            <div id="modal-timeline" class="space-y-2 max-h-56 overflow-y-auto pr-2">
+              <!-- Timeline rows inserted dynamically -->
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Modal Footer -->
+        <div class="px-6 py-3 bg-[#162032] border-t border-gray-800 flex justify-end space-x-3">
+          <button onclick="closeModal()" class="px-4 py-1.5 rounded bg-gray-800 hover:bg-gray-700 text-xs font-mono text-gray-200">
+            Close
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+
+  <script src="/dashboard.js"></script>
+</body>
+</html>

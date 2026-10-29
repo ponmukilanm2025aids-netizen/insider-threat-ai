@@ -1,0 +1,36 @@
+user_id,name,department,role,email,is_malicious,threat_type,assigned_pc
+EMP001,Jordan Smith,Engineering,QA Lead,jordan.smith@megacorp.internal,False,NORMAL,PC-1001
+EMP002,Sam Chen,IT_Admin,Database Administrator,sam.chen@megacorp.internal,False,NORMAL,PC-1002
+EMP003,Taylor Vance,Finance,Financial Analyst,taylor.vance@megacorp.internal,False,NORMAL,PC-1003
+EMP004,Casey Vance,HR,Talent Specialist,casey.vance@megacorp.internal,False,NORMAL,PC-1004
+EMP005,Pat Smith,Sales,BizDev Lead,pat.smith@megacorp.internal,False,NORMAL,PC-1005
+EMP006,Jordan Chen,Engineering,Software Engineer,jordan.chen@megacorp.internal,False,NORMAL,PC-1006
+EMP007,Casey Davis,IT_Admin,Sysadmin,casey.davis@megacorp.internal,True,PRIVILEGE_SABOTAGE,PC-1007
+EMP008,Casey Chen,Finance,Financial Analyst,casey.chen@megacorp.internal,False,NORMAL,PC-1008
+EMP009,Casey Kim,HR,Talent Specialist,casey.kim@megacorp.internal,False,NORMAL,PC-1009
+EMP010,Robin Davis,Sales,Account Executive,robin.davis@megacorp.internal,False,NORMAL,PC-1010
+EMP011,Alex Miller,Engineering,DevOps Engineer,alex.miller@megacorp.internal,False,NORMAL,PC-1011
+EMP012,Pat Garcia,IT_Admin,Database Administrator,pat.garcia@megacorp.internal,False,NORMAL,PC-1012
+EMP013,Taylor Chen,Finance,Accountant,taylor.chen@megacorp.internal,False,NORMAL,PC-1013
+EMP014,Jordan Vance,HR,Recruiter,jordan.vance@megacorp.internal,True,DATA_EXFILTRATION,PC-1014
+EMP015,Jordan Garcia,Sales,Sales Representative,jordan.garcia@megacorp.internal,False,NORMAL,PC-1015
+EMP016,Riley Patel,Engineering,DevOps Engineer,riley.patel@megacorp.internal,False,NORMAL,PC-1016
+EMP017,Robin Brown,IT_Admin,Sysadmin,robin.brown@megacorp.internal,False,NORMAL,PC-1017
+EMP018,Pat Vance,Finance,Financial Analyst,pat.vance@megacorp.internal,False,NORMAL,PC-1018
+EMP019,Sam Davis,HR,Talent Specialist,sam.davis@megacorp.internal,False,NORMAL,PC-1019
+EMP020,Riley Chen,Sales,Sales Representative,riley.chen@megacorp.internal,False,NORMAL,PC-1020
+EMP021,Jordan Smith,Engineering,QA Lead,jordan.smith@megacorp.internal,False,NORMAL,PC-1021
+EMP022,Morgan Patel,IT_Admin,Database Administrator,morgan.patel@megacorp.internal,False,NORMAL,PC-1022
+EMP023,Morgan Vance,Finance,Financial Analyst,morgan.vance@megacorp.internal,False,NORMAL,PC-1023
+EMP024,Sam Muller,HR,Recruiter,sam.muller@megacorp.internal,False,NORMAL,PC-1024
+EMP025,Chris Miller,Sales,BizDev Lead,chris.miller@megacorp.internal,False,NORMAL,PC-1025
+EMP026,Chris Chen,Engineering,DevOps Engineer,chris.chen@megacorp.internal,False,NORMAL,PC-1026
+EMP027,Sam Vance,IT_Admin,Database Administrator,sam.vance@megacorp.internal,False,NORMAL,PC-1027
+EMP028,Taylor Brown,Finance,Payroll Specialist,taylor.brown@megacorp.internal,True,ACCOUNT_COMPROMISE,PC-1028
+EMP029,Morgan Miller,HR,Talent Specialist,morgan.miller@megacorp.internal,False,NORMAL,PC-1029
+EMP030,Pat Patel,Sales,Sales Representative,pat.patel@megacorp.internal,False,NORMAL,PC-1030
+EMP031,Casey Chen,Engineering,QA Lead,casey.chen@megacorp.internal,False,NORMAL,PC-1031
+EMP032,Chris Smith,IT_Admin,Database Administrator,chris.smith@megacorp.internal,False,NORMAL,PC-1032
+EMP033,Alex Garcia,Finance,Financial Analyst,alex.garcia@megacorp.internal,False,NORMAL,PC-1033
+EMP034,Sam Vance,HR,Recruiter,sam.vance@megacorp.internal,False,NORMAL,PC-1034
+EMP035,Riley Garcia,Sales,Account Executive,riley.garcia@megacorp.internal,False,NORMAL,PC-1035
